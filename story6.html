@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ek Adhuri Kahani</title>
+    <link rel="stylesheet" href="index.css">
+	<style>
+	.story-full {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.story-category {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.story-full h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #020617;
+}
+
+.story-meta {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.story-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #334155;
+    margin-bottom: 18px;
+}
+
+.story-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+.full-story {
+    padding: 60px;
+    background: #ffffff;
+    max-width: 900px;
+    margin: auto;
+}
+
+.full-story h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #020617;
+}
+
+.full-story p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #334155;
+    margin-bottom: 18px;
+}
+.story-parts-tabs {
+    display: flex;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.story-parts-tabs button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 20px;
+    background: #e2e8f0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.story-parts-tabs button:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+.story-part {
+    margin-bottom: 60px;
+    scroll-margin-top: 100px; /* navbar ke liye */
+}
+
+.story-part h2 {
+    margin-bottom: 15px;
+    color: #020617;
+}
+
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">📖 Meri Kahaniyan</div>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="#">Stories</a>
+        <a href="writer.html">Writer</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<section class="story-full">
+
+
+
+    <span class="story-category">📖 Kavita</span>
+
+    <h1>चौराहे पर खड़ा वह बच्चा,</p>
+<p>आँखों में सपने छोटे-छोटे।</h1>
+
+    <p class="story-meta">By Arslan Hussain</p>
+
+    <div class="story-content">
+        <p>चौराहे पर खड़ा वह बच्चा,</p>
+<p>आँखों में सपने छोटे-छोटे।
+हाथों में रंगीन गुब्बारे...
+        </p>
+
+        
+ 
+
+    <div class="story-footer">
+        <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+        <a href="index.html" class="back-link">⬅ Back to Home</a>
+    </div>
+
+</section>
+
+<section class="full-story">
+ <div id="part1" class="story-part">
+  <h2>📖🌸 Puri Kavita</h2><p>
+   
+
+<p>चौराहे पर खड़ा वह बच्चा,</p>
+<p>आँखों में सपने छोटे-छोटे।</p>
+<p>हाथों में रंगीन गुब्बारे,</p>
+<p>पर मन में बोझ है गहरे-गहरे।</p>
+
+<p>धूप उसे भी जलाती होगी,</p>
+<p>प्यास उसे भी सताती है।</p>
+<p>पर घर की मजबूरी शायद,</p>
+<p>उसे वहाँ खींच लाती है।</p>
+
+<p>हम जो पल भर गुज़र जाते हैं,</p>
+<p>एक नज़र भी न रुकते हैं,</p>
+<p>क्या उसके दर्द को समझकर</p>
+<p>कभी दिल से सोच पाते हैं?</p>
+    
+	</p>
+</div>
+</section>
+
+
+
+<script>
+function likeStory(el) {
+    const count = el.querySelector('small');
+    if (!el.classList.contains('liked')) {
+        count.innerText = Number(count.innerText) + 1;
+        el.classList.add('liked');
+    }
+}
+function goToPart(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ek Adhuri Kahani</title>
+    <link rel="stylesheet" href="index.css">
+	<style>
+	.story-full {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.story-category {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.story-full h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #020617;
+}
+
+.story-meta {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.story-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #334155;
+    margin-bottom: 18px;
+}
+
+.story-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+.full-story {
+    padding: 60px;
+    background: #ffffff;
+    max-width: 900px;
+    margin: auto;
+}
+
+.full-story h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #020617;
+}
+
+.full-story p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #334155;
+    margin-bottom: 18px;
+}
+.story-parts-tabs {
+    display: flex;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.story-parts-tabs button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 20px;
+    background: #e2e8f0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.story-parts-tabs button:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+.story-part {
+    margin-bottom: 60px;
+    scroll-margin-top: 100px; /* navbar ke liye */
+}
+
+.story-part h2 {
+    margin-bottom: 15px;
+    color: #020617;
+}
+
+.story-image {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 25px 0;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    filter: brightness(0.75) contrast(1.1);
+}
+
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">📖 Meri Kahaniyan</div>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="#">Stories</a>
+        <a href="writer.html">Writer</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<section class="story-full">
+
+
+
+    <span class="story-category">📖 Horror Story</span>
+
+    <h1>👁️‍🗨️Shraap</h1>
+
+    <p class="story-meta">By Arslan Hussain</p>
+
+    <div class="story-content">
+        <p>Ek gaon…
+jahan log marte nahi…
+chup ho jaate hain
+
+Ek ped…
+jo sirf saaya nahi deta…
+yaadein rakhta hai
+
+Ek bachcha…
+jo sach bolta hai…
+aur phir akela chhod diya jaata hai
+
+Yeh kahani bhoot ki nahi…
+yeh kahani logon ki chup ki hai
+
+Naam yaad rakhna—
+SHRAAP
+        </p>
+
+        
+    </div>
+<!-- Story Parts Tabs -->
+<div class="story-parts-tabs">
+  <button onclick="goToPart('part1')">Part 1</button>
+  <button onclick="goToPart('part2')">Part 2</button>
+  <button onclick="goToPart('part3')">Part 3</button>
+  <button onclick="goToPart('part4')">Part 4</button>
+</div>
+
+    <div class="story-footer">
+        <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+        <a href="index.html" class="back-link">⬅ Back to Home</a>
+    </div>
+
+</section>
+
+<section class="full-story">
+ <div id="part1" class="story-part">
+  <h2>📖 Puri Kahani</h2>
+  <h2>🩸 SHRAAP – PART 1 </h2>
+  <p>Gaon ke bahar ek bahut purana peepal ka ped tha, jiske baare me koi khulkar baat nahi karta tha.</p>
+<p>Din ke waqt woh ped bilkul normal dikhta, jaise har gaon me hota hai.
+Par jaise hi shaam hoti, log us taraf dekhna bhi chhod dete.
+Bachchon ko sakht mana tha ki wahan jaakar khelna nahi hai.
+Jab koi poochta “kyon?”, jawab milta—“bas mana hai.”</p>
+
+<p>Isi gaon me rehta tha Ayaan, ek chupchaap sa ladka jo likhna aur sochna pasand karta tha.
+Ayaan ko lagta tha ki har mana ke peeche koi wajah hoti hai.
+Ek shaam school se aate waqt woh peepal ke ped ke paas ruk gaya.
+Us pal hawa achanak ruk gayi, jaise poora gaon saans rok kar khada ho.
+Patte hilne lage bina hawa ke, aur Ayaan ka dil tez dhadakne laga.</p>
+
+<p>Ped ke neeche use ek purani, dhool se bhari kitaab mili.
+Kitaab ke cover par sirf ek shabd likha tha—SHRAAP.
+Jaise hi Ayaan ne kitaab uthai, aas-paas ka andhera aur gehra ho gaya.
+Usne pehla panna khola aur use mehsoos hua jaise koi bilkul paas khada ho.
+Ek dheemi awaaz uske kaan me boli—“Jo padh leta hai, woh chup nahi reh paata.”</p>
+
+<p>Ayaan darr gaya, par bhaaga nahi, kyunki uska mann jawab chahta tha.
+Us raat Ayaan bilkul so nahi paaya, khidki ke bahar patton ki awaaz aati rahi.
+Subah uthkar usne apne haath par ek ajeeb sa nishaan dekha.
+Ussi din gaon ka ek aadmi achanak gaayab ho gaya.
+Logon ne baat ki, par sirf itni—“shayad kahin chala gaya hoga.”</p>
+
+<p>Kuch din baad doosra aadmi bhi dikhna band ho gaya.
+Phir teesra, phir chautha—aur har baar gaon aur zyada chup hota gaya.
+Ayaan ne poochna shuru kiya, par har baar use chup kara diya gaya.
+“Bachche zyada sawal nahi poochte,” log kehte the.</p>
+
+<p>Raat ko Ayaan ko lagta jaise ped use bula raha ho.
+Kitaab me naye-naye naam likhe ja rahe the, bina kisi ke likhe.
+Ayaan samajh gaya ki yeh shraap logon ko maar nahi raha.
+Yeh shraap unhe chup kar raha tha.
+Jo bolta, jo sawal karta, woh dheere-dheere gaayab ho jaata.</p>
+
+<p>Ayaan ne sab kuch apni diary me likhna shuru kiya.
+Woh chahta tha koi toh sach jaane.
+Par jab usne diary dikhani chahi, logon ne dekhne se mana kar diya.
+Ped ab raat me aur zyada zinda lagne laga.
+Patton ki awaaz me jaise shabd chhupe hote.</p>
+
+<p>Ek raat awaaz aayi—“Tum bhi un jaise ho.”
+Ayaan ko samajh aa gaya ki uska naam bhi likha ja raha hai.
+Gaon ke log safe rehna chahte the, sach nahi.
+Aur isi chup ne shraap ko taqat di.</p>
+
+<p>Ayaan akela padta gaya.
+Uske sawalon ka bojh koi baantne ko tayyar nahi tha.
+Ped ne jaise faisla kar liya ho.
+Raat gehri hoti chali gayi.
+Ayaan ghar se nikla, peepal ke ped ki taraf.</p>
+
+<p>Us raat ke baad Ayaan kabhi wapas nahi aaya.
+Sirf uski diary mili.
+Diary ka aakhri panna khula hua tha.
+Us par likha tha—
+“Sach tab tak zinda rehta hai, jab tak koi saath khada ho.”</p>
+
+<p>Gaon ne diary jala di.
+Aur isi ke saath…
+SHRAAP poori tarah jaag gaya.</p>
+
+ </div>
+
+<div id="part2" class="story-part">
+  <h2>🩸 SHRAAP – PART 2 (Chup Ka Phailna)</h2>
+  <p>
+Ayaan ke gaayab hone ke baad gaon ne use dhoondhne ki koshish nahi ki.
+Log subah uthte, kaam par jaate, aur raat ko darwaze band kar lete.
+Jaise Ayaan kabhi tha hi nahi.</p>
+
+<p>Sirf peepal ka ped badla hua lagta tha.
+Uske patte raat ko zyada der tak hilte rehte.
+Aur hawa bina wajah ruk jaati.</p>
+
+<p>Gaon ke beech ek ajeeb si khamoshi bas gayi.
+Mandir ki ghanti ab roz nahi bajti thi.
+School khulta tha, par bachchon ki awaaz kam hoti ja rahi thi.</p>
+
+<p>Master ji class me bolte-bolte achanak chup ho jaate.
+Jaise koi shabd unke gale me atak jaata ho.
+Bachche sawal poochne se pehle hi ruk jaate.</p>
+
+<p>Ek raat doodh wale ki cycle peepal ke ped ke paas mili.
+Cycle seedhi khadi thi.
+Par doodh wala kabhi ghar nahi pahuncha.</p>
+
+<p>Kisi ne report likhwane ki baat nahi ki.
+Kisi ne ped ki taraf ungli nahi uthai.
+Sabko lagta tha chup rehna hi sahi tareeka hai.</p>
+
+<p>Phir ek din mandir ke pandit ji subah nahi aaye.
+Mandir ka darwaza khula tha.
+Andar diya jal raha tha.
+Par pandit ji nahi mile.</p>
+
+<p>Us raat peepal ke ped ke neeche
+ek aur naam likh gaya.</p>
+
+<p>Gaon walon ne mehsoos kiya
+ki shraap kisi ko zabardasti nahi le ja raha.
+Woh sirf unhe chunta tha
+jo ya toh sawal karte the
+ya fir kuch zyada dekh lete the.</p>
+
+<p>Ayaan ki diary ki baatein yaad aane lagi.
+Par diary ab jal chuki thi.
+Sach ka koi saboot nahi bacha tha.</p>
+
+<p>Raat ko log sapne dekhne lage.
+Ek hi sapna.
+Peepal ka ped, aur uske neeche khade saaye.</p>
+
+<p>Saaye bolte nahi the.
+Bas dekhte the.</p>
+
+<p>Gaon ki ek aurat, jo hamesha sab par comment karti thi,
+achanak bilkul chup ho gayi.
+Uski aankhen khuli rehti,
+jaise woh kuch dekh rahi ho
+jo baaki koi nahi dekh paata.</p>
+
+<p>Ab gaon me log the,
+par awaaz nahi thi.</p>
+
+<p>Peepal ka ped ab sirf ek ped nahi lagta tha.
+Woh gaon ka hissa ban chuka tha.
+Jaise sabki yaadein usme band ho.</p>
+
+<p>Aur har raat,
+jab hawa rukti,
+toh patton ki sarsarahat me
+ek hi baat sunai deti—
+
+“Chup rehne se hi zinda reh sakte ho.”</p>
+
+<p>Par shraap aur gehra ho raha tha.
+Kyuki chup rehna
+ab dar nahi,
+aadat ban chuki thi.</p>
+
+<p>Aur jab dar aadat ban jaaye,
+toh shraap ko rokna mushkil ho jaata hai.</p>
+
+<p>Gaon ko ab lag raha tha
+ki kuch toh karna padega.
+Par sawal yeh tha—
+kya sach ke saath,
+ya phir chup ke saath?</p>
+
+<p>Isi uljhan me
+gaon ne ek faisla liya.</p>
+
+<p>Ek aadmi ko bulaya gaya.
+Jo in cheezon ko “samajhta” tha.</p>
+
+<p>Aur uske aane ke saath
+shraap ne
+muskurana shuru kar diya.</p>
+</div>
+ <div id="part3" class="story-part">
+    <h2>🕸️🕯️ SHRAAP – PART 3 (Tantrik Baba aur Jhoota Sukoon)</h2>
+   
+<p>Teen din baad gaon ke raaste par ek ajnabi dikhai diya.
+Uske baal uljhe hue the aur aankhen bahut gehri, jaise woh sirf dekh nahi raha ho, balki pehchaan raha ho.
+Gaon me kadam rakhte hi usne chaaron taraf nazar daali, jaise use sab kuch pehle se pata ho.</p>
+
+<p>Logon ne use tantrik baba kaha.
+Par baba ne khud ko kabhi tantrik nahi bola.
+Usne sirf itna kaha ki woh “yaadon ke bojh” ko samajhta hai.</p>
+
+<p> bina kisi ke bole seedha peepal ke ped ki taraf chal pada.
+Gaon walon ka dil zor-zor se dhadakne laga.
+Koi use rokne ki himmat nahi kar paaya.</p>
+
+<p>Ped ke paas pahunch kar baba ne mitti uthai aur aankhen band kar li.
+Kaafi der tak woh bilkul hilaa nahi.
+Jaise ped aur baba ek-doosre se baat kar rahe hon.</p>
+
+<p>Phir baba ne aankhen kholi aur dheere se kaha
+“Yahan bhoot nahi hai.”
+Gaon walon ne sukoon ki saans li.</p>
+
+<p>Par agla vaakya sun kar unka khoon jam gaya.
+“Yahan sirf woh log hain, jinhe akela chhod diya gaya.”</p>
+
+<p>Baba ne bataya ki shraap kisi mantra se paida nahi hua.
+Shraap tab bana jab pehli baar kisi ne sach bola aur poora gaon chup raha.
+Ped ne sab kuch dekha.
+Aur ped ne sab yaad rakha.</p>
+
+<p>Baba ne kaha ki shraap todna mumkin hai.
+Par uski keemat hoti hai.
+Gaon walon ne bina pooche haan keh di.</p>
+
+<p>Us raat peepal ke ped ke neeche ek anushthan hua.
+Mantra bole gaye.
+Diye jale.
+Hawa tez hui.</p>
+
+<p>Logon ko laga kuch halka ho gaya hai.
+Jaise koi bojh kam ho raha ho.
+Ped kuch pal ke liye shaant ho gaya.</p>
+
+<p>Baba ne kaha
+“Ab shraap bandh gaya hai.”</p>
+
+<p>Gaon walon ne chain ki neend li, pehli baar bahut saalon me.
+Mandir ki ghanti phir se baji.
+School me awaaz laut aayi.</p>
+
+<p>Par ek cheez nahi badli.
+Koi bhi sach bolne ki himmat nahi kar raha tha.</p>
+
+<p>Baba raat ko phir peepal ke ped ke paas aaya.
+Is baar akela.
+Usne ped se kaha
+“Main tumhe sambhal raha hoon, khatam nahi kar raha.”</p>
+
+<p>Us pal ek saaya ped ke andar hila.
+Woh pehla saaya tha.
+Aur wahi baba bhi tha.</p>
+
+<p>Baba ne sach chupaya.
+Usne gaon ko bachaya nahi.
+Usne gaon ko aadat sikha di.</p>
+
+<p>Aadat—chup rehne ki.</p>
+
+<p>Kuch mahine baad baba gaon se chala gaya.
+Par logon ne mehsoos kiya
+jaise woh kahin gaya hi nahi.</p>
+
+<p>Ped phir se raat ko hilta tha.
+Par ab log use dekhkar bhi nazar fer lete the.
+
+Shraap zinda tha.
+Bas so raha tha.</p>
+
+<p>Aur jab shraap sota hai,
+toh use jagane ke liye
+sirf ek sach bolne wala kaafi hota hai.</p>
+
+<p>Das saal baad…
+woh sach bolne wala aane hi wala tha.</p>
+  </p>
+  <img src="shraap-peepal.png" alt="Tantrik baba near haunted peepal tree" class="story-image">
+
+</div>
+  <div id="part4" class="story-part">
+   <h2>🌑 SHRAAP – FINAL PART (Das Saal Baad)</h2>
+
+<p>Das saal beet chuke the.
+Gaon badla hua lagta tha, par sirf upar se.
+Naye ghar ban gaye the, purane log kam ho gaye the.</p>
+
+<p>Peepal ka ped ab bhi wahin tha.
+Bas uske aas-paas koi nahi baithta tha.
+Bachche use dekh kar bhi chup ho jaate the.</p>
+
+<p>Log kehte the shraap khatam ho chuka hai.
+Par koi raat ko akela bahar nahi nikalta tha.</p>
+
+<p>Ek din shehar se ek ladka aaya.
+Naam tha Rudra.
+Research ke liye gaon ki purani kahaniyan likhta tha.</p>
+
+<p>Usne peepal ke ped ke baare me poochha.
+Gaon walon ne pehli baar
+ek saath ek hi jawaab diya—
+“Yeh bas ek ped hai.”</p>
+
+<p>Rudra ko wahi baat ajeeb lagi.
+Itni rehearsed khamoshi.</p>
+
+<p>Raat ko jab sab so rahe the,
+Rudra ped ke paas gaya.
+Hawa bilkul band thi.</p>
+
+<p>Tab patte hilne lage.
+Dheere… phir tez.</p>
+
+<p>Ped se awaaz aayi—
+“Tum bhi likhne aaye ho?”</p>
+
+<p>Rudra ka gala sookh gaya.
+Usne peeche mud kar dekha.
+Wahan koi nahi tha.</p>
+
+<p>Par ped ke andar
+kai saaye hile.
+Unme ek pehchana sa tha.</p>
+
+<p>Wahi tantrik baba.
+Wahi pehla saaya.
+Wahi Ayaan.</p>
+
+<p>Sab ek jaise lag rahe the.</p>
+
+<p>Ped ne kaha—
+“Sach likhne wale yahin rehte hain.”</p>
+
+<p>Agle kuch dino me gaon me cheezein hone lagi.
+Ek aadmi jo sabse zyada jhooth bolta tha,
+subah uthta hi nahi.</p>
+
+<p>Ek aurat jo hamesha sabko chup rehne ko kehti thi,
+achanak bolna bhool gayi.</p>
+
+<p>School ke master ji,
+jinhe sab kuch pata tha,
+ek raat ke baad wapas nahi aaye.</p>
+
+<p>Gaon walon ne gin-na chhod diya.
+Paach se zyada ho chuke the.</p>
+
+<p>Rudra ne sach likhna shuru kiya.
+Usne Ayaan ki kahani jaani.
+Baba ka asli raaz samjha.</p>
+
+<p>Baba shraap todne nahi aaya tha.
+Woh shraap ka pehla rakshak tha.
+Usne ped ko bandha nahi,
+sirf bhooka rehne diya.</p>
+
+<p>Aur ab ped bhooka tha.</p>
+
+<p>Gaon walon ne aakhri faisla liya.
+Rudra ko rokna hoga.
+Sach phir dabana hoga.</p>
+
+<p>Us raat Rudra ko ped ke paas le gaye.
+Kisi ne haath nahi uthaya.
+Bas sabne chup rehkar use chhod diya.</p>
+
+<p>Ped khud aage aaya.
+
+Subah ped par ek naya naam tha.</p>
+
+<p>Das saal baad gaon phir shaant tha.
+Par ab shraap aur bada ho chuka tha.</p>
+
+<p>Kyuki ab woh sirf ek gaon tak simit nahi tha.
+Rudra ki likhi kahaniyaan
+shehar tak pahunch chuki thi.</p>
+
+<p>Aakhri scene—
+shehar ka ek ladka phone par yeh kahani padh raha hai.
+Peeche hawa ruk jaati hai.</p>
+
+<p>Aur uske ghar ke paas
+ek naya peepal ka paudha
+hilne lagta hai.</p>
+
+<p>SHRAAP ne gaon chhod diya hai.
+Ab woh kahani ban chuka hai.</p>
+
+<p>Aur jo kahani padhta hai…
+woh kabhi akela nahi hota.</p>
+<p>
+😶‍🌫️
+END...</p>
+<h1 style="text-align:center;">Thanks for watching</h1>
+  </div>
+</section>
+
+
+
+<script>
+function likeStory(el) {
+    const count = el.querySelector('small');
+    if (!el.classList.contains('liked')) {
+        count.innerText = Number(count.innerText) + 1;
+        el.classList.add('liked');
+    }
+}
+function goToPart(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+</script>
+
+</body>
+</html>

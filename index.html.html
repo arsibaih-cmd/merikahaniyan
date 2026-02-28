@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meri Kahaniyan</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ 
+
+
+<header class="navbar">
+    <div class="logo">📖 Meri Kahaniyan</div>
+    <nav class="menu">
+        <a href="#">Home</a>
+        <a href="writer.html">Stories</a>
+        <a href="st.html">Writer</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Apni Kahani, Apni Pehchaan</h1>
+    <p>Likho, padho aur kahaniyon ka safar shuru karo</p>
+</section>
+
+<section class="story-tabs">
+
+    <div class="tabs">
+  <button class="tab active" onclick="filterStories('all', this)">📚 All</button>
+  <button class="tab" onclick="filterStories('kahani', this)">📖 Kahaniyan</button>
+  <button class="tab" onclick="filterStories('daravani', this)">👻 Daravani Kahaniyan</button>
+  <button class="tab" onclick="filterStories('kavita', this)">📝 Kavita</button>
+</div>
+
+
+    <div class="stories-list">
+	
+
+        
+
+        
+
+        <div class="story-card kavita" data-id="story3">
+            <h3>Zindagi Ki Kavita</h3>
+            <p>Kuch alfaaz jo dil se nikle…</p>
+			<div class="story-actions">
+    <a href="story4.html" class="read-more">Read More</a>
+    <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+</div>
+
+        </div>
+		
+		
+        <div class="story-card kavita" data-id="story3">
+            <h3>🌸 सुबह की धूप जब आती है, </h3>
+            <p> 🌸सुबह की धूप जब आती है…</p>
+			<div class="story-actions">
+    <a href="story5.html" class="read-more">Read More</a>
+    <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+</div>
+
+        </div>
+		
+		
+		
+        <div class="story-card kavita" data-id="story3">
+            <h3>हाथों में रंगीन गुब्बारे </h3>
+            <p>चौराहे पर खड़ा वह बच्चा,
+
+आँखों में सपने छोटे-छोटे।
+
+हाथों में रंगीन गुब्बारे, …</p>
+			<div class="story-actions">
+    <a href="story6.html" class="read-more">Read More</a>
+    <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+</div>
+
+        </div>
+		
+		
+        <div class="story-card kavita" data-id="story3">
+            <h3>🌸मैं जब भी कविता लिखता हूँ,
+ </h3>
+            <p>मैं जब भी कविता लिखता हूँ,
+दुनिया रंगीन लगती है।...</p>
+			<div class="story-actions">
+    <a href="story7.html" class="read-more">Read More</a>
+    <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+</div>
+
+        </div>
+		
+		<div class="story-card kavita">
+            <h3>Kavita!उठ, अभी वक्त है</h3>
+            <p>उठ, अभी वक्त है
+थकान से समझौता मत कर।
+जो टूटा है आज
+वही कल की ताक़त बनेगा।</p>
+			<div class="story-actions">
+    <a href="story3.html" class="read-more">Read More</a>
+    <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+</div>
+
+        </div>
+		
+		
+        
+		
+		<div class="story-card daravani">
+            <h3>🕰️ 3:17 AM</h3>
+            <p>ये कहानी पढ़ी नहीं जाती।
+ये देखती है कि तुम कब 3:17 पर पहुँचते हो।...</p>
+			<div class="story-actions">
+    <a href="story2.html" class="read-more">Read More</a>
+    <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+</div>
+
+        </div>
+		
+		<div class="story-card daravani">
+            <h3>👁️‍🗨️Shraap</h3>
+            <p>Ek gaon jahan log marte nahi chup ho jaate hain Ek ped jo sirf saaya nahi deta yaadein rakhta hai ...</p>
+			<div class="story-actions">
+    <a href="story9.html" class="read-more">Read More</a>
+    <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+</div>
+
+        </div>
+		
+		<div class="story-card daravani">
+            <h3>The Locked Floor</h3>
+            <p>Ayaan ne kabhi nahi socha tha ki uski life ek normal school trip se horror nightmare ban jayegi. ...</p>
+			<div class="story-actions">
+    <a href="story10.html" class="read-more">Read More</a>
+    <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+</div>
+
+        </div>
+		
+		<div class="story-card daravani">
+            <h3>kabristan</h3>
+            <p>Is story ki shuruaat hoti hai Rahman family se —
+Abbu, Ammi aur unka chhota beta.  </p>
+			<div class="story-actions">
+    <a href="story11.html" class="read-more">Read More</a>
+    <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+</div>
+
+        </div>
+		
+		
+
+
+		
+    </div>
+</section>
+
+
+
+
+
+<section class="community">
+
+  <h2>💬 Readers Community</h2>
+  <p>Apna feedback, review ya kahani ka ehsaas yahan likho</p>
+
+  <div class="comment-box">
+    <input type="text" id="userName" placeholder="Aapka naam">
+    <textarea id="userComment" placeholder="Apna comment likhiye..."></textarea>
+    <button onclick="addComment()">Comment Post Karein</button>
+  </div>
+
+  <div class="comments-list" id="commentsList"></div>
+
+</section>
+
+<footer class="site-footer">
+  <p>
+    © 2026 Meri Kahaniyan · All rights reserved · All stories are fictional
+  </p>
+</footer>
+
+<button id="scrollTopBtn">⬆</button>
+<script>
+function filterStories(type, btn) {
+  const cards = document.querySelectorAll('.story-card');
+  const tabs = document.querySelectorAll('.tab');
+
+  // active tab
+  tabs.forEach(tab => tab.classList.remove('active'));
+  btn.classList.add('active');
+
+  // filter
+  cards.forEach(card => {
+    if (type === 'all') {
+      card.style.display = 'block';
+    } else {
+      card.style.display = card.classList.contains(type)
+        ? 'block'
+        : 'none';
+    }
+  });
+}
+
+// page load par ALL show
+window.onload = function () {
+  filterStories('all', document.querySelector('.tab'));
+};
+
+function likeStory(btn) {
+  const card = btn.closest(".story-card");
+  const storyId = card.getAttribute("data-id");
+  const countEl = btn.querySelector("small");
+
+  let likes = localStorage.getItem("like_" + storyId);
+  let liked = localStorage.getItem("liked_" + storyId);
+
+  likes = likes ? parseInt(likes) : 0;
+
+  if (liked === "true") {
+    // unlike
+    likes--;
+    btn.classList.remove("liked");
+    localStorage.setItem("liked_" + storyId, "false");
+  } else {
+    // like
+    likes++;
+    btn.classList.add("liked");
+    localStorage.setItem("liked_" + storyId, "true");
+  }
+
+  localStorage.setItem("like_" + storyId, likes);
+  countEl.textContent = likes;
+}
+
+// PAGE LOAD par saved likes load karo
+window.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".story-card").forEach(card => {
+    const storyId = card.getAttribute("data-id");
+    const btn = card.querySelector(".like-btn");
+    const countEl = btn.querySelector("small");
+
+    let likes = localStorage.getItem("like_" + storyId);
+    let liked = localStorage.getItem("liked_" + storyId);
+
+    likes = likes ? parseInt(likes) : 0;
+    countEl.textContent = likes;
+
+    if (liked === "true") {
+      btn.classList.add("liked");
+    }
+  });
+});
+ 
+</script>
+
+
+ 
+</body>
+</html>

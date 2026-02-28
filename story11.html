@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🕰️ 3:17 AM </title>
+    <link rel="stylesheet" href="index.css">
+	<style>
+	.story-full {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.story-category {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.story-full h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #020617;
+}
+
+.story-meta {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.story-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #334155;
+    margin-bottom: 18px;
+}
+
+.story-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+.full-story {
+    padding: 60px;
+    background: #ffffff;
+    max-width: 900px;
+    margin: auto;
+}
+
+.full-story h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #020617;
+}
+
+.full-story p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #334155;
+    margin-bottom: 18px;
+}
+.story-parts-tabs {
+    display: flex;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.story-parts-tabs button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 20px;
+    background: #e2e8f0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.story-parts-tabs button:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+.story-part {
+    margin-bottom: 60px;
+    scroll-margin-top: 100px; /* navbar ke liye */
+}
+
+.story-part h2 {
+    margin-bottom: 15px;
+    color: #020617;
+}
+
+.b{
+ height:400px;
+ width:600px;
+ border-radius:20px;
+ }
+	</style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">📖 Meri Kahaniyan</div>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="#">Stories</a>
+        <a href="writer.html">Writer</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<section class="story-full">
+
+
+
+    <span class="story-category">📖 Horror Story</span>
+
+    <h1>🕯️ KABRASTHAN</h1>
+
+    <p class="story-meta">By Arslan Hussain</p>
+
+    <div class="story-content">
+        <p>Is kahani ki shuruaat Rahman family se hoti hai.
+Abbu, Ammi aur unka 8 saal ka beta Ayaan.
+
+Rahman family kaafi dino se shehar mein kamra dhoondh rahi thi.
+Kabhi rent zyada hota,
+kabhi malik family ko dene se mana kar deta.
+Roz naye area jaate, roz niraasha milti.
+
+Paise dheere-dheere khatam ho rahe the.
+
+Aakhir ek din unhein shehar se thoda bahar
+ek achha, saaf aur naya ghar milta hai.
+Do kamre, khuli hawa, proper bijli-paani
+aur sabse badi baat — rent bahut kam.
+
+        </p>
+
+        
+    </div>
+<!-- Story Parts Tabs -->
+<div class="story-parts-tabs">
+  <button onclick="goToPart('part1')">Part 1</button>
+  <button onclick="goToPart('part2')">Part 2</button>
+  <button onclick="goToPart('part3')">Part 3</button>
+  <button onclick="goToPart('part4')">Part 4</button>
+</div>
+
+    <div class="story-footer">
+        <span class="like-btn" onclick="likeStory(this)">❤️ <small>0</small></span>
+        <a href="index.html" class="back-link">⬅ Back to Home</a>
+    </div>
+
+</section>
+
+<section class="full-story">
+ <div id="part1" class="story-part">
+  <h2>📖 Puri Kahani</h2>
+  <h2>🕯️ PART 1 – KABRASTHAN </h2>
+
+<p>Is kahani ki shuruaat Rahman family se hoti hai.
+Abbu, Ammi aur unka 8 saal ka beta Ayaan.</p>
+
+<p>Rahman family kaafi dino se shehar mein kamra dhoondh rahi thi.
+Kabhi rent zyada hota,
+kabhi malik family ko dene se mana kar deta.
+Roz naye area jaate, roz niraasha milti.</p>
+
+<p>Paise dheere-dheere khatam ho rahe the.</p>
+
+<p>Aakhir ek din unhein shehar se thoda bahar
+ek achha, saaf aur naya ghar milta hai.
+Do kamre, khuli hawa, proper bijli-paani
+aur sabse badi baat — rent bahut kam.</p>
+
+<p>Abbu bina zyada soch-vichaar ke haan kar dete hain.</p>
+
+<p>Shift hote waqt Ayaan peeche mud-mud kar dekhta rehta hai.
+Ghar ke bilkul peeche ek kabristan hota hai.
+Shaant. Khamosh.
+Zyada bada nahi, par kaafi purana.</p>
+
+<p>Ayaan Ammi se dheere se poochta hai,
+“Ammi… wahan kaun rehta hai?”</p>
+
+<p>Ammi casually jawab deti hain,
+“Bas qabrein hain beta, kuch nahi hota.”</p>
+
+<p>Raat ko ghar bilkul theek lagta hai.
+Light chal rahi hai.
+TV ki awaaz aa rahi hai.
+Sab normal.</p>
+
+<p>Lekin Ayaan ka dhyaan baar-baar
+khidki ki taraf ja raha hai.</p>
+
+<p>Use lagta hai jaise
+kabristan ke paas koi khada hai.</p>
+
+<p>Wo Abbu se kehta hai,
+“Abbu… bahar koi dekh raha hai.”</p>
+
+<p>Abbu mobile se nazar uthaye bina bolte hain,
+“Bas tumhara waham hai. So jao.”</p>
+
+<p>Thodi der baad Ayaan phir uth kar baith jata hai.
+Uski aankhein bhari hui hain.
+Saans tez chal rahi hai.</p>
+
+<p>Ammi se chipak kar bolta hai,
+“Ammi mujhe dar lag raha hai.”</p>
+
+<p>Ammi use seene se laga kar kehti hain,
+“Naya ghar hai, aadat ho jayegi.”</p>
+
+<p>Ayaan chup ho jata hai…
+lekin uski nazar ab bhi
+khidki se bahar hi tiki rehti hai.</p>
+
+<p>Kyunki use lagta hai
+kabristan mein koi sirf khada nahi hai…
+balki use dekh kar muskura raha hai.</p>
+
+<p>Aur maa-baap…
+kuch bhi notice nahi karte.</p>
+  </p>
+ </div>
+
+<div id="part2" class="story-part">
+  <h2>🕯️ PART 2 </h2>
+  <p>
+    
+
+<p>Subah hoti hai.
+
+Ghar bilkul normal lagta hai.
+Dhoop aangan mein hai.
+Birds ki awaaz aa rahi hai.</p>
+
+<p>Abbu tayyar ho rahe hain office ke liye.
+Unke liye yeh bas ek sasta aur achha ghar hai.
+
+Lekin Ayaan bilkul theek nahi hai.</p>
+
+<p>Wo chup-chap baitha hai.
+Uski aankhon ke neeche kaale ghere hain.
+Raat bhar jaaga hua lagta hai.</p>
+
+<p>Ammi uske sar par haath rakhti hain.
+“Neend poori nahi hui?”
+
+Ayaan dheere se bolta hai,
+“Kal raat kabristan mein
+kisi ne mera naam liya…”</p>
+
+<p>Ammi ka haath ek pal ke liye ruk jata hai.
+Phir wo khud ko sambhal leti hain.
+
+“Tum sapna dekh rahe the,”
+wo normal banne ki koshish karti hain.
+
+Abbu hansi mein bolte hain,
+“Zyada imagination hai iski.”
+
+Aur baat wahin khatam ho jaati hai.</p>
+
+<p><b>🌤️ Din ka waqt</b></p>
+
+<p>Ayaan poore din ghar ke andar hi rehta hai.
+Wo bahar khelne se mana kar deta hai.
+
+Ammi notice karti hain
+ki wo baar-baar
+khidki ke paas jaakar
+kabristan ki taraf dekhta hai.</p>
+
+<p>Kabhi kabhi
+wo bina bole hi
+peeche hat jata hai.
+
+Jaise kuch dekh liya ho.
+
+Ammi ka dil ghabrane lagta hai.
+Par wo Abbu ko kuch nahi batati.</p>
+
+<p><b>🌆 Shaam</b></p>
+
+<p>Abbu ghar aate hain.
+
+Ammi dheere se bolti hain,
+“Ayaan theek nahi lag raha…
+shayad kabristan ki wajah se.”
+
+Abbu shrug kar dete hain.
+“Ismein darne wali kya baat hai?
+Sirf qabrein hi to hain.”
+
+Phir bhi, bachche ke liye
+wo decide karte hain
+kabristan dekh aane ka.</p>
+
+<p><b>⚰️ Kabristan (Bilkul Normal)</b></p>
+
+<p>Kabristan shaant hai.
+Koi ajeeb baat nahi.
+
+Qabrein purani hain,
+par sab theek-thak lagi hui.
+
+Abbu aaraam se chal rahe hain.
+Unke liye yeh bas ek jagah hai.
+
+Ayaan Ammi ke bilkul paas rehta hai.
+Uski ungliyan kaanp rahi hain.
+
+Ayaan ek qabr ki taraf dekhta hai…
+phir nazar hata leta hai.
+
+Kuch ke baad bolta hai,</p>
+<p>“Yahan kal raat
+koi khada tha…”</p>
+
+<p>Abbu us qabr ko dekhte hain.
+Sab normal.
+
+“Dekha? Kuch nahi hai,”
+wo kehte hain.
+
+Kabristan se wapas aate waqt
+halki si hawa chalti hai.
+Ammi ko lagta hai
+jaise kisi ne unke kaan ke paas
+saans li ho.
+
+Wo palat kar dekhti hain.
+
+Koi nahi hota.</p>
+
+<p><b>🌙 Raat</b></p>
+
+<p>Raat zyada khamosh hai.
+
+TV band ho jata hai.
+Light thodi dim lagti hai.
+
+Ayaan achanak uth kar baith jata hai.
+
+“Ammi…
+wo phir aa gaya.”
+
+Is baar Ayaan ro nahi raha.
+Is baar wo sure hai.
+
+Ammi ka gala sookh jata hai.
+Wo kuch bol nahi paati.</p>
+
+<p>Bahaar se koi awaaz nahi.
+Bas kabristan ki taraf se
+mitti ke girne jaisi halki si awaaz.
+
+Abbu so rahe hain.
+Unhein kuch sunai nahi deta.
+
+Ammi Ayaan ko seene se laga leti hain.
+Unka dil zor-zor se dhadak raha hai.
+
+Aur tab…
+
+khidki ke sheeshe par
+ungliyon ke nishaan dikhte hain.
+
+Andar se.</p>
+
+Ammi ki saans ruk jaati hai.
+
+Wo light jala deti hain.
+Nishaan gayab.
+
+<p>Subah tak
+Ammi aur Ayaan
+bilkul nahi sote.</p>
+
+<p>Abbu ko abhi bhi
+kuch pata nahi.
+
+Lekin Ammi jaanti hain…
+
+Kabristan sirf peeche nahi hai.
+
+Wo dheere-dheere
+ghar ke andar aa raha hai.</p>
+  </p>
+ </div>
+ 
+  <div id="part3" class="story-part">
+    <h2>🕸️🕯️ PART 3 – KABRASTHAN
+
+(Subah hoti hai...)</h2>
+  
+ <p>Ammi aur Ayaan dono thake hue lagte hain.
+Aankhein laal.
+Chehre pe neend nahi, darr jama hua hai. </p>
+
+Abbu ready hote hue poochte hain,
+“Raat ko theek se soye nahi kya?”
+
+Ammi seedha jawab nahi deti.
+Bas bolti hain,
+“Ayaan ko phir darr lag raha tha.” </p>
+
+Abbu gehri saans lete hain.
+“Tum dono zyada soch rahe ho.
+Jagah nayi hai, bas isliye.”
+
+Wo office nikal jaate hain. </p>
+
+ <p><b>🌤️ Din</b></p>
+
+Abbu ke jaane ke baad
+ <p>ghar aur bhi zyada khamosh lagne lagta hai.
+
+Ayaan aaj khidki ke paas bhi nahi jaata.
+Wo Ammi ke pallu ko pakad kar baitha rehta hai. <p>
+
+ <p>Achaanak wo bolta hai,
+“Ammi… </p>
+ <p>kabristan wale uncle gusse mein hain.”
+
+Ammi ka jism thanda pad jaata hai.
+“Kaun uncle?” </p>
+
+ <p>Ayaan aankhein band karke kehta hai,
+“Jo mitti ke neeche rehte hain.” </p>
+
+ <p>Ammi ka dil zor se dhadakta hai.
+Wo topic badalne ki koshish karti hain,
+lekin Ayaan chup ho jaata hai. </p>
+
+ <p><b>🌆 Shaam – Abbu ka Pehla Dout</b> </p>
+
+<p>Shaam ko Abbu ghar aate hain.
+Gate kholte hi wo ruk jaate hain.
+
+Unke jooton par geeli mitti lagi hoti hai.
+
+Wo confuse ho jaate hain.
+Aaj barish nahi hui.
+Aur wo seedha office se aaye hain.</p>
+
+<p>Ammi kehti hain,
+“Hum dono bahar nahi gaye.”
+
+Abbu jooton ko dekhte rehte hain.
+Kuch seconds ke liye
+unke chehre se confidence gayab ho jaata hai.
+
+Par wo phir bol dete hain,
+“Shayad kahin se lag gayi hogi.”</p>
+
+<p><b>⚰️ Kabristan ki History</p> </b>
+
+<p>Raat ke khane ke baad</p>
+<p>Abbu pados ke ek buzurg aadmi se baat karte hain.
+
+Bas casually poochte hain,
+“Yeh peeche kabristan kaafi purana lagta hai.”
+
+Buzurg aadmi thoda chup ho jaata hai.
+Phir bolta hai,
+“Haan… kaafi saal purana hai.”
+
+“Par ab wahan dafnana band hai na?”
+Abbu poochte hain.</p>
+
+<p>Buzurg dheere se kehta hai,
+“Band to hai…
+lekin kuch log kehte hain
+wahan sab qabrein poori nahi hoti.”
+
+“Matlab?”
+Abbu poochte hain.</p>
+
+<p>Buzurg seedha jawab nahi deta.
+Bas itna bolta hai,
+“Raat ko wahan zyada der mat rehna.”
+
+Abbu hansi mein baat uda dete hain.
+Par unke dimag mein
+yeh baat chipak jaati hai.</p>
+
+<p><b>🌙 Raat – Dar ka Peak (Ammi & Ayaan)</b></p>
+
+<p>Raat gehri hoti hai.</p>
+
+<p>Ayaan achanak cheekh kar uth jaata hai.
+“Ammi!
+Wo bol rahe hain ke
+yeh ghar unka hai!”
+
+Ammi ka gala sookh jaata hai.
+Wo darwaze ki taraf dekhti hain.
+
+Darwaza band hai.
+Lekin handle dheere-dheere hil raha hai.</p>
+
+<p>Koi zor nahi.
+Bas jaise
+koi check kar raha ho.
+
+Ammi Ayaan ko seene se laga leti hain.
+Unki aankhon se aansu nikal aate hain.
+
+Wo Abbu ko uthane jaati hain…
+
+Aur tab
+Abbu bhi uth kar baith jaate hain.
+
+“Tumne bhi suna?”
+wo pehli baar poochte hain.
+
+Ammi bol nahi paati.
+Bas sar hila deti hain.</p>
+
+<p>Bahaar se awaaz aati hai —
+mitti ko kheenchne ki.
+
+Abbu khidki ke paas jaate hain.
+
+Bahaar kuch nahi dikhta.
+
+Par kabristan ki taraf
+ek qabr ki mitti
+bilkul nayi lag rahi hoti hai.
+
+Abbu kuch nahi kehte.</p>
+
+<p>Lekin is baar
+wo light band karke
+wapas sone ki koshish bhi nahi karte.</p>
+
+<p>Unke chehre se
+yeh saaf dikh raha hai —
+
+Abhi yaqeen nahi hua hai…
+par shak paida ho chuka hai.
+
+Aur Ammi jaanti hain,
+jab Abbu ko yaqeen hoga…
+
+tab shayad
+bahut der ho chuki hogi.</p>
+  </p>
+  
+  <div id="part4" class="story-part">
+  <h2>🩸 FINAL CHAPTER – KABRASTHAN 🩸</h2>
+  
+
+<p>Raat aaj zyada andheri hai.
+Bijli ja chuki hai. Ghar mein sirf emergency light jal rahi hai. Ayaan Ammi se chipak kar baitha hai.</p>
+<p>Wo ro nahi raha.
+Is baar wo bilkul shaant hai.
+
+Ammi is shaanti se aur zyada darr rahi hain.
+
+Abbu kamre ke beech khade hain.
+Unke haath mein torch hai.
+Ab tak wo khud ko samjha rahe the—
+logical reasons,
+bachche ka darr,
+new place.</p>
+
+<p>Lekin aaj…
+ghar unhein ghar jaisa lag hi nahi raha.
+
+Achaanak Ayaan bolta hai,
+“Abbu…
+aaj wo niche nahi hain.”
+
+Abbu poochte hain,
+“Phir kahan hain?”
+
+Ayaan seedhi nazar se dekhta hai,
+“Ghar ke andar.”
+
+Ammi ka jism kaanp jata hai.</p>
+
+<p><b>⚰️ Kabristan ka Sach</b></p>
+
+<p>Abbu faisla kar lete hain.
+“Abhi.
+Abhi kabristan chal ke dekhte hain.”
+
+Raat ke 3 baj rahe hain.
+
+Teenon torch lekar
+ghar ke peeche jaate hain.</p>
+
+<p>Kabristan mein ghusate hi
+hawa ruk jaati hai.
+Awaaz jaise nigal li gayi ho.
+
+Abbu torch qabron par ghumate hain.
+
+Aur tab
+wo dekhte hain.</p>
+
+<p>Teen qabrein…
+jin par koi naam nahi likha.
+
+Sirf ek hi cheez common hai —
+qabron ke patthar par
+ghar ka number khuda hua hai.
+
+Abbu ka torch kaanpne lagta hai.
+
+Pados ke buzurg ki baat yaad aati hai:
+“Kuch qabrein poori nahi hoti.”</p>
+
+<p>Ammi bolti hain,
+“Poora matlab…?”
+
+Aur tab
+kabristan ke andar se awaaz aati hai:
+
+“Jo ghar humse cheena gaya…
+use humne wapas liya.”
+
+Mitti hilti hai.
+Qabr ka patthar dheere se uthta hai.
+
+Koi haath bahar nahi aata.
+Koi chehra nahi.</p>
+
+<p>Bas awaaz.</p>
+
+<p>“Yeh ghar pehle kabristan ka hissa tha.
+Zameen badli gayi…
+qabrein nahi.”
+
+Abbu peeche hat jaate hain.
+Unka logic toot chuka hai.
+
+“Humne sirf rehne ke liye liya tha…”
+wo bolte hain.
+
+Awaaz hans padti hai.
+Sookhi, khali hansi.
+
+“Zinda hamesha majboor hote hain.
+Murde nahi.”</p>
+
+<p><b>🕯️ Ghar ke Andar</b></p>
+
+<p>Achaanak emergency light bujh jaati hai.
+
+Ghar ke andar se
+qadam chalne ki awaaz aati hai.
+
+Kabristan ke peeche jo qabrein hain…
+ab ghar ke andar hain.</p>
+
+<p>Deewar par
+mitti ke haath ke nishaan ubhar aate hain.
+
+Ayaan bolta hai,
+“Ammi…
+yeh wahi uncle hain
+jo niche rehte the.”
+
+Abbu cheekh padte hain,
+“Bas!
+Hum ghar chhod rahe hain!”</p>
+
+<p>Aur tab
+ghar ka main darwaza
+khud band ho jata hai.
+
+Deewar par likha ubharta hai:
+
+“GHAR CHHODA NAHI JATA.
+GHAR POORA KIYA JATA HAI.”
+
+Zameen thandi hone lagti hai.
+Jaise niche kuch saans le raha ho.</p>
+
+<p><b>⚰️ Sach (Final Reveal)</b></p>
+
+<p>Awaaz bolti hai:
+
+“Har 10 saal mein
+kabristan apna hissa wapas leta hai.
+Is baar…
+tum ho.”
+
+Abbu ghutnon par gir jaate hain.
+Unki aankhon se aansu nikal aate hain.</p>
+
+<p>“Bachcha…
+use chhod do…”</p>
+
+<p>Kuch seconds ki khamoshi.
+
+Phir awaaz aati hai:
+
+“Bachcha hame dekh sakta hai.
+Aur jo hume dekh sakta hai…
+wo humara hota hai.”
+
+Ayaan peeche mud kar dekhta hai.</p>
+
+<p>Aur pehli baar
+muskurata hai.
+
+Ammi chillati hain.
+
+Ayaan bolta hai,
+“Ammi…
+mujhe dar nahi lag raha ab.”</p>
+<img src="kabrasthan-image.png" alt="Kabristan Horror Scene" class="b">
+
+<p><b>🩸 Subah</b></p>
+
+<p>Subah padosi dekhte hain —
+ghar khaali hai.
+
+Darwaza khula hai.
+Andar koi nahi.
+
+Sirf ghar ke peeche…
+kabristan mein
+teen nayi qabrein hain.</p>
+
+<p>Is baar
+un par naam likha hua hai.
+
+Aur ghar ke board par likha hai:
+
+KABRASTHAN
+
+“Jo ghar yahan bante hain,
+wo sirf zindaon ke liye nahi hote.”</p>
+  
+</div>
+</section>
+
+
+
+<script>
+function likeStory(el) {
+    const count = el.querySelector('small');
+    if (!el.classList.contains('liked')) {
+        count.innerText = Number(count.innerText) + 1;
+        el.classList.add('liked');
+    }
+}
+function goToPart(id) {
+  document.getElementById(id).scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+</script>
+
+</body>
+</html>
